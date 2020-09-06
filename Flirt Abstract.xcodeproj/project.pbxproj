@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		552563E12504FB2E00DA70E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552563E02504FB2E00DA70E4 /* AppDelegate.swift */; };
 		552563E32504FB2E00DA70E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552563E22504FB2E00DA70E4 /* SceneDelegate.swift */; };
-		552563E52504FB2E00DA70E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552563E42504FB2E00DA70E4 /* ViewController.swift */; };
+		552563E52504FB2E00DA70E4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552563E42504FB2E00DA70E4 /* MainViewController.swift */; };
 		552563E82504FB2E00DA70E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552563E62504FB2E00DA70E4 /* Main.storyboard */; };
 		552563EA2504FB2F00DA70E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 552563E92504FB2F00DA70E4 /* Assets.xcassets */; };
 		552563ED2504FB2F00DA70E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 552563EB2504FB2F00DA70E4 /* LaunchScreen.storyboard */; };
+		552563FB2505000D00DA70E4 /* FlirtMessageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 552563FA2505000D00DA70E4 /* FlirtMessageClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		552563DD2504FB2E00DA70E4 /* Flirt Abstract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flirt Abstract.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		552563DD2504FB2E00DA70E4 /* Message Spammer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Message Spammer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		552563E02504FB2E00DA70E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		552563E22504FB2E00DA70E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		552563E42504FB2E00DA70E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		552563E42504FB2E00DA70E4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		552563E72504FB2E00DA70E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		552563E92504FB2F00DA70E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		552563EC2504FB2F00DA70E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		552563EE2504FB2F00DA70E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		552563FA2505000D00DA70E4 /* FlirtMessageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlirtMessageClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		552563D42504FB2E00DA70E4 = {
 			isa = PBXGroup;
 			children = (
-				552563DF2504FB2E00DA70E4 /* Flirt Abstract */,
+				552563DF2504FB2E00DA70E4 /* Message Spammer */,
 				552563DE2504FB2E00DA70E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,23 +50,72 @@
 		552563DE2504FB2E00DA70E4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				552563DD2504FB2E00DA70E4 /* Flirt Abstract.app */,
+				552563DD2504FB2E00DA70E4 /* Message Spammer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		552563DF2504FB2E00DA70E4 /* Flirt Abstract */ = {
+		552563DF2504FB2E00DA70E4 /* Message Spammer */ = {
 			isa = PBXGroup;
 			children = (
 				552563E02504FB2E00DA70E4 /* AppDelegate.swift */,
 				552563E22504FB2E00DA70E4 /* SceneDelegate.swift */,
-				552563E42504FB2E00DA70E4 /* ViewController.swift */,
-				552563E62504FB2E00DA70E4 /* Main.storyboard */,
-				552563E92504FB2F00DA70E4 /* Assets.xcassets */,
-				552563EB2504FB2F00DA70E4 /* LaunchScreen.storyboard */,
+				552563FC2505001800DA70E4 /* ML Model */,
+				552563F82504FB5C00DA70E4 /* Util */,
+				552563F72504FB5200DA70E4 /* Supporting Files */,
+				552563F62504FB4B00DA70E4 /* Controller */,
+				552563F52504FB4300DA70E4 /* Model */,
+				552563F42504FB3900DA70E4 /* View */,
 				552563EE2504FB2F00DA70E4 /* Info.plist */,
 			);
-			path = "Flirt Abstract";
+			path = "Message Spammer";
+			sourceTree = "<group>";
+		};
+		552563F42504FB3900DA70E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				552563E62504FB2E00DA70E4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		552563F52504FB4300DA70E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		552563F62504FB4B00DA70E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				552563E42504FB2E00DA70E4 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		552563F72504FB5200DA70E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				552563E92504FB2F00DA70E4 /* Assets.xcassets */,
+				552563EB2504FB2F00DA70E4 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		552563F82504FB5C00DA70E4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		552563FC2505001800DA70E4 /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				552563FA2505000D00DA70E4 /* FlirtMessageClassifier.mlmodel */,
+			);
+			path = "ML Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +135,7 @@
 			);
 			name = "Flirt Abstract";
 			productName = "Flirt Abstract";
-			productReference = 552563DD2504FB2E00DA70E4 /* Flirt Abstract.app */;
+			productReference = 552563DD2504FB2E00DA70E4 /* Message Spammer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552563E52504FB2E00DA70E4 /* ViewController.swift in Sources */,
+				552563E52504FB2E00DA70E4 /* MainViewController.swift in Sources */,
+				552563FB2505000D00DA70E4 /* FlirtMessageClassifier.mlmodel in Sources */,
 				552563E12504FB2E00DA70E4 /* AppDelegate.swift in Sources */,
 				552563E32504FB2E00DA70E4 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,7 +344,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gokulnair.Flirt-Abstract";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Message Spammer";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +362,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gokulnair.Flirt-Abstract";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Message Spammer";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
