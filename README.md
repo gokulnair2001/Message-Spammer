@@ -43,7 +43,7 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/Messa
 
 # Use 
 
-So this is not a solely standing app, the framework can be inherited to any chatting app to remove spammers.
+So this is not a solely standing app, the framework can be inherited to any chatting app to remove spam messages and to block them.
 
 # Imortant Message 
 
