@@ -41,11 +41,11 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/Messa
 * If you face issues in any step open a new issue.
 * To fix issues: Fork this repository, make your changes and make a Pull Request. 
 
-# Use 
+# Use 🕹
 
 So this is not a solely standing app, the framework can be inherited to any chatting app to remove spam messages and to block them.
 
-# Imortant Message 
+# Imortant Message ✉️
 
 * I started this app with an idea to create a spammer which removes unknown people who flirt with people, but the i realise with the model that the app even makes normal
 conversation as spam, so decided to make it a message spammer which removes spam messages.
