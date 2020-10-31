@@ -10,7 +10,7 @@
 
 # Introduction ⚒  
 
-The working is very simple just write any text and then press the button,the ML Model will synthesize whether the text is a spam message or a normal message.
+The working is very simple just write any text and then press the button,the ML Model will synthesize whether the text is a Spam message or a normal message.
 
 # Steps to run 📲
 
