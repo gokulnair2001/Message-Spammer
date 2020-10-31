@@ -47,5 +47,4 @@ So this is not a solely Standing app, the framework can be inherited to any chat
 
 # Imortant Message ✉️
 
-* I started this app with an idea to create a spammer which removes unknown people who flirt with people, but the i realise with the model that the app even makes normal
-conversation as spam, so decided to make it a message spammer which removes spam messages.
+* I started this app with an idea to create a spammer which removes unknown people who flirt with others, but then I realised with this particular ML model the app even makes normal conversation as spam, so decided to make it a message spammer which removes spam messages.
