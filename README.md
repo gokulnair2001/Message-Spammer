@@ -46,7 +46,7 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/Messa
 So this is not a solely Standing app, the framework can be inherited to any chatting app to remove spam messages and to block them.
 
 # Like the Project ?
-If you like COVID TODAY please consider buying me a coffee 🥰
+If you like Message Spammer please consider buying me a coffee 🥰
 
 [<img width="200" alt="BMC logo+wordmark - Black" src="https://user-images.githubusercontent.com/56252259/98195548-0c55fb80-1f48-11eb-8293-02131a0d908c.png">](https://www.buymeacoffee.com/gokulnair)
 
