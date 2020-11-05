@@ -45,6 +45,11 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/Messa
 
 So this is not a solely Standing app, the framework can be inherited to any chatting app to remove spam messages and to block them.
 
+# Like the Project ?
+If you like COVID TODAY please consider buying me a coffee 🥰
+
+[<img width="200" alt="BMC logo+wordmark - Black" src="https://user-images.githubusercontent.com/56252259/98195548-0c55fb80-1f48-11eb-8293-02131a0d908c.png">](https://www.buymeacoffee.com/gokulnair)
+
 # Imortant Message ✉️
 
 * I started this app with an idea to create a spammer which removes unknown people who flirt with others, but then I realised with this particular ML model the app even makes normal conversation as spam, so decided to make it a message spammer which removes spam messages.
